@@ -1,66 +1,52 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    height: 30px;
-    float: right;
-    top: 10px;
-  }
-  
-  button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .lista-convidados {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .lista-convidados li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    
-    /* Adiciona padding de 10px em todos os lados do elemento */
-    padding: 10px;
-    
-    /* Adiciona bordas arredondadas ao elemento */
-    border-radius: 5px;
-    
-    /* Adiciona um fundo claro ao elemento */
-    background-color: #f0f0f0;
-  }
-  
-  .lista-convidados li input {
-    /* Remove o margin-right de 5px */
-    margin-right: 0;
-  }
-  
-  .lista-convidados li button {
-    /* Adiciona padding de 10px em todos os lados do botão */
-    padding: 10px;
-  }
-  
-  .lista-convidados li.riscado {
-    text-decoration: line-through;
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input, button {
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul.convidados {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.convidados li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.convidados li .flex {
+  display: flex;
+  align-items: center;
+}
+
+ul.convidados li button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul.convidados li.risk {
+  text-decoration: line-through;
+}
+
+h1 {
+  color: #ff0000;
+}
